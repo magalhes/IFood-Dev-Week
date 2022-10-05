@@ -1,0 +1,15 @@
+INSERT INTO restaurante (id, cep, complemento, nome) VALUES
+(1L, '0000001', 'complemento Endereço Restaurante 1' ,'Restaurante 1' ),
+(2L, '0000002', 'complemento Endereço Restaurante 2' ,'Restaurante 2');
+
+INSERT INTO cliente (id, cep, complemento, nome) VALUES
+(1L, '0000001', 'complemento Endereco Restaurante 1', 'Cliente 1' ),
+(2L, '0000001', ' Endereco Lucas ', 'Lucas' );
+
+INSERT INTO produto (id, disponivel, nome, valor_unitario, restaurante_id) VALUES
+(1L, true, 'produto 1' , 5.0, 1L),
+(2L, true, 'produto 2' , 6.0, 1L),
+(3L, true, 'produto 3' , 7.0, 2L);
+
+INSERT INTO sacola (id, forma_pagamento , fechada, valor_total, cliente_id)VALUES
+(1L, 0, false, 0.0 , 1L);
